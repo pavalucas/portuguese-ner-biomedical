@@ -1,0 +1,33 @@
+[
+  {
+    "completions": [
+      {
+        "created_at": 1601048508,
+        "id": 12001,
+        "lead_time": 93.367,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "vDdxdBgok7",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 75,
+              "labels": [
+                "Complication"
+              ],
+              "start": 63,
+              "text": "hipoglicemia"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Boa noite grupo! Alguém aqui ficou com alguma sequela devido a hipoglicemia? Qual a experiência de vocês?"
+    },
+    "id": 12
+  }
+]

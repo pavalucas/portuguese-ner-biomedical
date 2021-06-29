@@ -1,0 +1,1437 @@
+[
+  {
+    "completions": [
+      {
+        "created_at": 1601048508,
+        "id": 12001,
+        "lead_time": 93.367,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "vDdxdBgok7",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 75,
+              "labels": [
+                "Complication"
+              ],
+              "start": 63,
+              "text": "hipoglicemia"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Boa noite grupo! Alguém aqui ficou com alguma sequela devido a hipoglicemia? Qual a experiência de vocês?"
+    },
+    "id": 12
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601048588,
+        "id": 10001,
+        "lead_time": 79.758,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "9opRv2QbMM",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 13,
+              "labels": [
+                "Complication"
+              ],
+              "start": 4,
+              "text": "diabética"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "iVboHofu0a",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 47,
+              "labels": [
+                "Complication"
+              ],
+              "start": 46,
+              "text": "1"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "ZwpLvNB4Ek",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 54,
+              "labels": [
+                "Complication"
+              ],
+              "start": 53,
+              "text": "2"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Sou diabética gostaria de saber qual a pior a 1 ou a 2"
+    },
+    "id": 10
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601048816,
+        "id": 6001,
+        "lead_time": 157.569,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "bJ8myhkKMn",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 65,
+              "labels": [
+                "Food"
+              ],
+              "start": 60,
+              "text": "limão"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "sVduU9EJyy",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 77,
+              "labels": [
+                "Food"
+              ],
+              "start": 70,
+              "text": "açafrão"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "nmsmmWyb_2",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 86,
+              "labels": [
+                "Time"
+              ],
+              "start": 81,
+              "text": "manha"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "FcctIQh6Sx",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 119,
+              "labels": [
+                "Complication"
+              ],
+              "start": 111,
+              "text": "diabetes"
+            }
+          }
+        ],
+        "skipped": false,
+        "was_cancelled": false
+      }
+    ],
+    "data": {
+      "text": "Bom dia povo, gostaria de saber se alguém do grupo já tomou limão com açafrão de manha em jejum para abaixar a diabetes. Me conta se a experiência foi boa."
+    },
+    "id": 6,
+    "predictions": []
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601048861,
+        "id": 18001,
+        "lead_time": 44.772,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "_w7dX5i2Sd",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 43,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 32,
+              "text": "sem apetite"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Tem acontecido com alguém estar sem apetite?"
+    },
+    "id": 18
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601048914,
+        "id": 19001,
+        "lead_time": 52.972,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "wW8-YsoLaA",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 24,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 15,
+              "text": "ansiedade"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "YoW4PjjnjP",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 37,
+              "labels": [
+                "Complication"
+              ],
+              "start": 28,
+              "text": "depressão"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Você sofre com ansiedade ou depressão é precisa de ajuda? Digite eu"
+    },
+    "id": 19
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049191,
+        "id": 1,
+        "lead_time": 848.484,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "NDh5MoH1Gr",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 43,
+              "labels": [
+                "Food"
+              ],
+              "start": 31,
+              "text": "grão de bico"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "50ybEQF_hn",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 55,
+              "labels": [
+                "Complication"
+              ],
+              "start": 46,
+              "text": "Diabético"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "sdCYfD3DUm",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 89,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 82,
+              "text": "glicose"
+            }
+          }
+        ],
+        "skipped": false,
+        "was_cancelled": false
+      },
+      {
+        "created_at": 1601049264,
+        "id": 2,
+        "lead_time": 12.69,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "NDh5MoH1Gr",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 43,
+              "labels": [
+                "Food"
+              ],
+              "start": 31,
+              "text": "grão de bico"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "50ybEQF_hn",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 55,
+              "labels": [
+                "Complication"
+              ],
+              "start": 46,
+              "text": "Diabético"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "sdCYfD3DUm",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 89,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 82,
+              "text": "glicose"
+            }
+          }
+        ],
+        "skipped": false,
+        "was_cancelled": false
+      }
+    ],
+    "data": {
+      "text": "﻿Alguém no grupo sabe dizer se grão de bico o Diabético pode comer sem aumentar a glicose???"
+    },
+    "id": 0,
+    "predictions": []
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049297,
+        "id": 17001,
+        "lead_time": 32.504,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "cSabhAlcqb",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 98,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 95,
+              "text": "335"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "B66aTwKmQJ",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 40,
+              "labels": [
+                "Medication"
+              ],
+              "start": 33,
+              "text": "remédio"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "oRMdubuWkX",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 66,
+              "labels": [
+                "Complication"
+              ],
+              "start": 58,
+              "text": "diabetes"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Bom dia gente, alguém sabe de um remédio bom pra baixar o diabetes rapido, meu esposo está com 335."
+    },
+    "id": 17
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049372,
+        "id": 15001,
+        "lead_time": 75.073,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "30dPVE_VmS",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 23,
+              "labels": [
+                "Food"
+              ],
+              "start": 17,
+              "text": "coca 0"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "e6LCivI7EK",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 63,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 55,
+              "text": "glicemia"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Alguém aqui toma coca 0? Pode dizer se aumenta muito a glicemia? Boa noite"
+    },
+    "id": 15
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049460,
+        "id": 14001,
+        "lead_time": 87.225,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "oogp0t6BN0",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 28,
+              "labels": [
+                "Time"
+              ],
+              "start": 18,
+              "text": "32 semanas"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "G4EM9d5nly",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 59,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 45,
+              "text": "fome constante"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "3bUrMeTNBY",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 75,
+              "labels": [
+                "Complication"
+              ],
+              "start": 67,
+              "text": "diabetes"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "Q9mucHwzxn",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 123,
+              "labels": [
+                "Time"
+              ],
+              "start": 115,
+              "text": "24 horas"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "5zcey-8Cdn",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 114,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 110,
+              "text": "fome"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Estou gestante de 32 semanas, mas estou numa fome constante, tenho diabetes, tenho me controlado, mas agora e fome 24 horas. Nem sei o que comer."
+    },
+    "id": 14
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049548,
+        "id": 4001,
+        "lead_time": 87.99,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "gulmQMP5ST",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 124,
+              "labels": [
+                "Food"
+              ],
+              "start": 121,
+              "text": "pão"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "08tNSy28My",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 131,
+              "labels": [
+                "Food"
+              ],
+              "start": 125,
+              "text": "cuscuz"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "IJhvOmQjBT",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 140,
+              "labels": [
+                "Food"
+              ],
+              "start": 133,
+              "text": "tapioca"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "59AGZ7tw5a",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 149,
+              "labels": [
+                "Food"
+              ],
+              "start": 142,
+              "text": "bolacha"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "g4glLC2Ur9",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 103,
+              "labels": [
+                "Food"
+              ],
+              "start": 99,
+              "text": "café"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "5_ilAhBhAJ",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 112,
+              "labels": [
+                "Time"
+              ],
+              "start": 107,
+              "text": "manhã"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Bom dia a todos do grupo, venho através desta pedir uma informação! Como fazer pra me alimentar no café da manhã: porque pão cuscuz, tapioca, bolacha também não pode. Me ajude a me alimentar melhor."
+    },
+    "id": 4
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049700,
+        "id": 7001,
+        "lead_time": 149.851,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "3n9ETb2RDe",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 34,
+              "labels": [
+                "Complication"
+              ],
+              "start": 25,
+              "text": "diabética"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "ct0OcP2ziU",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 44,
+              "labels": [
+                "Complication"
+              ],
+              "start": 38,
+              "text": "tipo 2"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "fWGGQbwN-6",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 92,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 79,
+              "text": "dor de cabeça"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "_tYTlAaZtN",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 113,
+              "labels": [
+                "Complication"
+              ],
+              "start": 94,
+              "text": "não consegue dormir"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "HgdGkSUnNp",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 123,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 115,
+              "text": "tonturas"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "eYR7QI1d9Y",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 136,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 125,
+              "text": "visão turva"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "7ZqLkJQCh3",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 163,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 139,
+              "text": "fortes dores no estômago"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "Znzly6AGiT",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 204,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 199,
+              "text": "dores"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Bom dia. A minha filha é diabética do tipo 2, ela neste momento está com muita dor de cabeça, não consegue dormir, tonturas, visão turva e fortes dores no estômago. O que posso fazer para reduzir as dores?"
+    },
+    "id": 7
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049762,
+        "id": 16001,
+        "lead_time": 62.119,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "KSqF9j8mTX",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 28,
+              "labels": [
+                "Complication"
+              ],
+              "start": 20,
+              "text": "estresse"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "c4PexSaW87",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 53,
+              "labels": [
+                "Diet"
+              ],
+              "start": 48,
+              "text": "dieta"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "lwGqyJj7Mc",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 81,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 77,
+              "text": "fome"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Bom dia amigos! Meu estresse não me deixa fazer dieta, me aborreço me dá uma fome horrível socorro!"
+    },
+    "id": 16
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049852,
+        "id": 1001,
+        "lead_time": 89.038,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "m_L_4j_bMC",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 33,
+              "labels": [
+                "Medication"
+              ],
+              "start": 26,
+              "text": "remédio"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "gI8drU9QMh",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 45,
+              "labels": [
+                "Complication"
+              ],
+              "start": 38,
+              "text": "coceira"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "6djVLodZwE",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 88,
+              "labels": [
+                "Medication"
+              ],
+              "start": 81,
+              "text": "injeção"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "GfzVtZHWHF",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 102,
+              "labels": [
+                "Medication"
+              ],
+              "start": 91,
+              "text": "comprimidos"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "yYnGSMR5b7",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 117,
+              "labels": [
+                "Medication"
+              ],
+              "start": 103,
+              "text": "anti alérgicos"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "mqvKsku_p7",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 188,
+              "labels": [
+                "Complication"
+              ],
+              "start": 184,
+              "text": "coça"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "BcTk6ng3zC",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 222,
+              "labels": [
+                "Complication"
+              ],
+              "start": 214,
+              "text": "diabetes"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "jyr8FYIwdg",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 232,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 228,
+              "text": "alta"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "ge3EkVb3Ba",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 252,
+              "labels": [
+                "Complication"
+              ],
+              "start": 236,
+              "text": "problema de rins"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Alguém pode me indicar um remédio pra coceira, estava no corpo inteiro mas tomei injeção e comprimidos anti alérgicos e deu uma melhorada. Mas agora continua nos braços e no pescoço e coça  muito. Será que a minha diabetes está alta ou problema de rins?"
+    },
+    "id": 1
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049865,
+        "id": 3001,
+        "lead_time": 12.453,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "kjjq3aXlzk",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 36,
+              "labels": [
+                "Complication"
+              ],
+              "start": 31,
+              "text": "fraco"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "O cabelo de vocês também ficou fraco? Ou só o meu?"
+    },
+    "id": 3
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049895,
+        "id": 5001,
+        "lead_time": 28.64,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "AlwAt3dClT",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 27,
+              "labels": [
+                "Medication"
+              ],
+              "start": 20,
+              "text": "remédio"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "Qt5RvqaGJk",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 51,
+              "labels": [
+                "Complication"
+              ],
+              "start": 41,
+              "text": "neuropatia"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Bom dia grupo algum remédio caseiro para neuropatia."
+    },
+    "id": 5
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049936,
+        "id": 8001,
+        "lead_time": 41.219,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "3aQAne3YK0",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 36,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 32,
+              "text": "alta"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "nRYqr53d8q",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 31,
+              "labels": [
+                "Complication"
+              ],
+              "start": 23,
+              "text": "diabetes"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "Mt6quW4Thh",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 45,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 42,
+              "text": "428"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "4h1NAiSCdf",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 77,
+              "labels": [
+                "Insulin"
+              ],
+              "start": 70,
+              "text": "regular"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Olá amigos estou com a diabetes alta está 428 já tomei 15 unidades da regular e não quer abaixar o que devo fazer não quero ir no medico por causa desse vírus me ajuda aí amigos"
+    },
+    "id": 8
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601049977,
+        "id": 11001,
+        "lead_time": 40.317,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "zqT5_VBwls",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 40,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 30,
+              "text": "formigando"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "u8701wiwc6",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 4,
+              "labels": [
+                "Date"
+              ],
+              "start": 0,
+              "text": "Hoje"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "WHFIYEWdeJ",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 63,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 59,
+              "text": "fome"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "Ihz_NQ-uTy",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 110,
+              "labels": [
+                "Complication"
+              ],
+              "start": 102,
+              "text": "diabetes"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Hoje estou com as penas e pés formigando demais! Estou com fome também. Muito difícil controlar a tia diabetes!"
+    },
+    "id": 11
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601050009,
+        "id": 13001,
+        "lead_time": 31.654,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "vgPV1ct-9A",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 73,
+              "labels": [
+                "Glucose"
+              ],
+              "start": 66,
+              "text": "glicose"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "gpevjZr13z",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 46,
+              "labels": [
+                "Time"
+              ],
+              "start": 41,
+              "text": "tempo"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Boa tarde, é verdade que se passar muito tempo sem se alimentar a glicose sobre?"
+    },
+    "id": 13
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601050024,
+        "id": 9001,
+        "lead_time": 14.461,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "UN24RUWrRa",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 51,
+              "labels": [
+                "Complication"
+              ],
+              "start": 30,
+              "text": "cetoacidose diabética"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "brC83Ef5hq",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 29,
+              "labels": [
+                "Symptom"
+              ],
+              "start": 21,
+              "text": "sintomas"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Gente vocês sabem os sintomas cetoacidose diabética"
+    },
+    "id": 9
+  },
+  {
+    "completions": [
+      {
+        "created_at": 1601050057,
+        "id": 2001,
+        "lead_time": 32.171,
+        "result": [
+          {
+            "from_name": "label",
+            "id": "Sdu6mmuLqC",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 174,
+              "labels": [
+                "Insulin"
+              ],
+              "start": 166,
+              "text": "insulina"
+            }
+          },
+          {
+            "from_name": "label",
+            "id": "NnpLmHjFb6",
+            "parent_id": null,
+            "source": "$text",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "end": 204,
+              "labels": [
+                "Medication"
+              ],
+              "start": 197,
+              "text": "glifage"
+            }
+          }
+        ]
+      }
+    ],
+    "data": {
+      "text": "Pessoal, obrigado para quem orou e para quem fez oração.  Meu médico me disse que não sabe como, mas eu fiz meus exames e está tudo ótimo. Graças a Deus. Tirou até a insulina e vou tomar apenas um glifage. Obrigada Deus👏👏"
+    },
+    "id": 2
+  }
+]
