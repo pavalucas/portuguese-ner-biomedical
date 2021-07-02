@@ -22,6 +22,9 @@ proposed models.
 
 The data are in the Portuguese language and from the biomedical domain. 
 We provided only one file as a data example, but we will release the full dataset soon.
+
+For the full documentation, please follow this link: [Docs](https://pavalucas.github.io/portuguese-ner-biomedical/). 
+
 <br />
 
 <!-- GETTING STARTED -->
