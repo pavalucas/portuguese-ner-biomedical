@@ -1,0 +1,4 @@
+Trainer
+==========================================
+.. automodule:: trainer
+   :members:

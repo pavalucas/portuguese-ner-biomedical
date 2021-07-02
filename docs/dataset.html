@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+      <title>Dataset</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Model" href="model.html" />
+  <link rel="prev" title="Portuguese Named Entity Recognition for Biomedical Information Extraction’s documentation" href="index.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Portuguese NER for Biomedical Information Extraction</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#portuguese-named-entity-recognition-for-biomedical-information-extraction-s-documentation">Contents:</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Dataset</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-dataset" class="reference internal">Dataset</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="model.html" class="reference internal ">Model</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="trainer.html" class="reference internal ">Trainer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="evaluation.html" class="reference internal ">Evaluation</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Dataset</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Portuguese Named Entity Recognition for Biomedical Information Extraction’s documentation</a>
+  </li>
+  <li class="next">
+    <a href="model.html"
+       title="next chapter">Model →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="module-dataset">
+<span id="dataset"></span><h1>Dataset<a class="headerlink" href="#module-dataset" title="Permalink to this headline">¶</a></h1>
+<p>This module loads and parses input data.
+Author: Lucas Pavanelli</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataset.Data">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataset.</span></span><span class="sig-name descname"><span class="pre">Data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataset.Data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data.</p>
+<dl class="simple">
+<dt>file_name<span class="classifier">str</span></dt><dd><p>Dataset’s file name</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>corpus<span class="classifier">list</span></dt><dd><p>List containing tokens, tags and postags</p>
+</dd>
+<dt>vocab_in<span class="classifier">set</span></dt><dd><p>Input vocabulary</p>
+</dd>
+<dt>in_w2id<span class="classifier">dict</span></dt><dd><p>Map from word to id for input vocabulary</p>
+</dd>
+<dt>in_id2w<span class="classifier">dict</span></dt><dd><p>Map from id to word for input vocabulary</p>
+</dd>
+<dt>vocab_out<span class="classifier">set</span></dt><dd><p>Output vocabulary</p>
+</dd>
+<dt>out_w2id<span class="classifier">dict</span></dt><dd><p>Map from word to id for output vocabulary</p>
+</dd>
+<dt>out_id2w<span class="classifier">dict</span></dt><dd><p>Map from id to word for output vocabulary</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>preprocess()</dt><dd><p>Preprocesses tokens and tags</p>
+</dd>
+<dt>fit()</dt><dd><p>Gets train and test data</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dataset.Data.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dataset.Data.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Separates corpus into training and test set</p>
+<dl class="simple">
+<dt>(List, List)</dt><dd><p>Tokens and tags as PyTorch tensors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataset.Data.preprocess">
+<span class="sig-name descname"><span class="pre">preprocess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataset.Data.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts tokens and tags to PyTorch tensors</p>
+<dl class="simple">
+<dt>tokens<span class="classifier">list of string</span></dt><dd><p>List of tokens.</p>
+</dd>
+<dt>tags<span class="classifier">list of string</span></dt><dd><p>List of tags.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>(Tensor, Tensor)</dt><dd><p>Tokens and tags as PyTorch tensors</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dataset.DataBERT">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataset.</span></span><span class="sig-name descname"><span class="pre">DataBERT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataset.DataBERT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data for BERT model. Inherits from Data class.</p>
+<dl class="simple">
+<dt>file_name<span class="classifier">str</span></dt><dd><p>Dataset’s file name</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>tokenizer<span class="classifier">list</span></dt><dd><p>BERT’s tokenizer</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>preprocess()</dt><dd><p>Preprocesses tokens and tags</p>
+</dd>
+<dt>fit()</dt><dd><p>Gets train and test data</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dataset.DataBERT.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dataset.DataBERT.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Separates corpus into training and test set</p>
+<dl class="simple">
+<dt>(List, List)</dt><dd><p>Tokens and tags as PyTorch tensors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataset.DataBERT.preprocess">
+<span class="sig-name descname"><span class="pre">preprocess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataset.DataBERT.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts tokens and tags to PyTorch tensors</p>
+<dl class="simple">
+<dt>tokens<span class="classifier">list of string</span></dt><dd><p>List of tokens.</p>
+</dd>
+<dt>tags<span class="classifier">list of string</span></dt><dd><p>List of tags.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>(Tensor, Tensor, Tensor)</dt><dd><p>Tokens, subwords and tags as PyTorch tensors</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Portuguese Named Entity Recognition for Biomedical Information Extraction’s documentation</a>
+  </li>
+  <li class="next">
+    <a href="model.html"
+       title="next chapter">Model →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Lucas Pavanelli.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.7.3.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

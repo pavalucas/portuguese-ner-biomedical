@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+      <title>Evaluation</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="Trainer" href="trainer.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Portuguese NER for Biomedical Information Extraction</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#portuguese-named-entity-recognition-for-biomedical-information-extraction-s-documentation">Contents:</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="dataset.html" class="reference internal ">Dataset</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="model.html" class="reference internal ">Model</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="trainer.html" class="reference internal ">Trainer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Evaluation</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-evaluation" class="reference internal">Evaluation</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Evaluation</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="trainer.html"
+       title="previous chapter">← Trainer</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="module-evaluation">
+<span id="evaluation"></span><h1>Evaluation<a class="headerlink" href="#module-evaluation" title="Permalink to this headline">¶</a></h1>
+<p>This module contains an algorithm to evaluate proposed models.
+Author: Lucas Pavanelli</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="evaluation.Evaluation">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">evaluation.</span></span><span class="sig-name descname"><span class="pre">Evaluation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_folder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evaluation.Evaluation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates proposed models.</p>
+<dl class="simple">
+<dt>output_folder<span class="classifier">str</span></dt><dd><p>Path to output folder</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>output_folder<span class="classifier">str</span></dt><dd><p>Path to output folder</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="evaluation.Evaluation.convert_output_to_text">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">convert_output_to_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_id2w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evaluation.Evaluation.convert_output_to_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts output list containing integers to a text list.</p>
+<dl class="simple">
+<dt>y<span class="classifier">list</span></dt><dd><p>Output list containing integers.</p>
+</dd>
+<dt>out_id2w<span class="classifier">dict</span></dt><dd><p>Map of index to word.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>list</dt><dd><p>Text list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="evaluation.Evaluation.evaluate">
+<span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_experiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evaluation.Evaluation.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates model’s predictions using classification_report, generates a csv containing classification report,
+and return micro avg f1-score</p>
+<dl class="simple">
+<dt>num_experiment<span class="classifier">int</span></dt><dd><p>Current experiment number</p>
+</dd>
+<dt>y_true<span class="classifier">list</span></dt><dd><p>True output list.</p>
+</dd>
+<dt>y_pred<span class="classifier">list</span></dt><dd><p>Predicted output list.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>float</dt><dd><p>F1 score of current experiment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="evaluation.Evaluation.generate_output_csv">
+<span class="sig-name descname"><span class="pre">generate_output_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_tokens</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evaluation.Evaluation.generate_output_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a csv containing test results.</p>
+<dl class="simple">
+<dt>file_name<span class="classifier">str</span></dt><dd><p>Name of csv file.</p>
+</dd>
+<dt>y_true<span class="classifier">list</span></dt><dd><p>True output list.</p>
+</dd>
+<dt>y_pred<span class="classifier">list</span></dt><dd><p>Predicted output list.</p>
+</dd>
+<dt>test_tokens<span class="classifier">list</span></dt><dd><p>List of tokens in test data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="evaluation.Evaluation.get_single_output_id_list">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_single_output_id_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evaluation.Evaluation.get_single_output_id_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a list of lists into a single list.</p>
+<dl class="simple">
+<dt>y<span class="classifier">list</span></dt><dd><p>Output list.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>list</dt><dd><p>Single list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="trainer.html"
+       title="previous chapter">← Trainer</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Lucas Pavanelli.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.7.3.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

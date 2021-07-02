@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+      <title>Model</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Trainer" href="trainer.html" />
+  <link rel="prev" title="Dataset" href="dataset.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Portuguese NER for Biomedical Information Extraction</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#portuguese-named-entity-recognition-for-biomedical-information-extraction-s-documentation">Contents:</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="dataset.html" class="reference internal ">Dataset</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Model</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-model" class="reference internal">Model</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="trainer.html" class="reference internal ">Trainer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="evaluation.html" class="reference internal ">Evaluation</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Model</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="dataset.html"
+       title="previous chapter">← Dataset</a>
+  </li>
+  <li class="next">
+    <a href="trainer.html"
+       title="next chapter">Trainer →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="module-model">
+<span id="model"></span><h1>Model<a class="headerlink" href="#module-model" title="Permalink to this headline">¶</a></h1>
+<p>This module contains all implemented models to predict Named Entity Recognition (NER).
+Author: Lucas Pavanelli</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.BERTSlotFilling">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">model.</span></span><span class="sig-name descname"><span class="pre">BERTSlotFilling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.BERTSlotFilling" title="Permalink to this definition">¶</a></dt>
+<dd><p>BERTimbau model to predict NER classes.</p>
+<dl class="simple">
+<dt>hidden_dim<span class="classifier">int</span></dt><dd><p>Hidden layer dimension.</p>
+</dd>
+<dt>num_classes<span class="classifier">int</span></dt><dd><p>Number of NER classes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>device<span class="classifier">torch.device</span></dt><dd><p>Class device</p>
+</dd>
+<dt>hidden_dim<span class="classifier">int</span></dt><dd><p>Hidden layer dimension.</p>
+</dd>
+<dt>num_classes<span class="classifier">int</span></dt><dd><p>Number of NER classes.</p>
+</dd>
+<dt>bert<span class="classifier">AutoModel</span></dt><dd><p>BERTimbau model</p>
+</dd>
+<dt>Wb<span class="classifier">nn.Linear</span></dt><dd><p>Linear layer</p>
+</dd>
+<dt>softmax<span class="classifier">nn.Softmax</span></dt><dd><p>Softmax layer</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.BERTSlotFilling.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subword_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.BERTSlotFilling.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes probabilities for each NER class.</p>
+<dl class="simple">
+<dt>token_ids<span class="classifier">torch.Tensor</span></dt><dd><p>List of tokens indexes.</p>
+</dd>
+<dt>subword_ids<span class="classifier">torch.Tensor</span></dt><dd><p>List of subword indexes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>torch.Tensor</dt><dd><p>Probabilities for each NER class</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="model.LinearLayerCRF">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">model.</span></span><span class="sig-name descname"><span class="pre">LinearLayerCRF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vocab_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_w2id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.LinearLayerCRF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear Layer + CRF model that returns probability for each NER class</p>
+<dl class="simple">
+<dt>vocab_size<span class="classifier">int</span></dt><dd><p>Vocabulary size.</p>
+</dd>
+<dt>num_classes<span class="classifier">int</span></dt><dd><p>Number of NER classes.</p>
+</dd>
+<dt>out_w2id: dict</dt><dd><p>Map from word to id for output vocabulary.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>device<span class="classifier">torch.device</span></dt><dd><p>Class device.</p>
+</dd>
+<dt>linear<span class="classifier">SimpleLinear</span></dt><dd><p>Linear layer.</p>
+</dd>
+<dt>crf: CRF</dt><dd><p>PyTorch CRF</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.LinearLayerCRF.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.LinearLayerCRF.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes probabilities for each NER class.</p>
+<dl class="simple">
+<dt>token_ids<span class="classifier">torch.Tensor</span></dt><dd><p>List of tokens indexes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>torch.Tensor</dt><dd><p>Probabilities for each NER class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.LinearLayerCRF.loss">
+<span class="sig-name descname"><span class="pre">loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.LinearLayerCRF.loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes model’s loss.</p>
+<dl class="simple">
+<dt>token_ids<span class="classifier">torch.Tensor</span></dt><dd><p>List of tokens indexes.</p>
+</dd>
+<dt>tag_ids: torch.Tensor</dt><dd><p>List of tags indexes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>torch.Tensor</dt><dd><p>Model’s loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="model.SimpleLinear">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">model.</span></span><span class="sig-name descname"><span class="pre">SimpleLinear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vocab_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_w2id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emb_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.SimpleLinear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple linear model to create embeddings and return entity logits</p>
+<dl class="simple">
+<dt>vocab_size<span class="classifier">int</span></dt><dd><p>Vocabulary size.</p>
+</dd>
+<dt>num_classes<span class="classifier">int</span></dt><dd><p>Number of NER classes.</p>
+</dd>
+<dt>out_w2id: dict</dt><dd><p>Map from word to id for output vocabulary.</p>
+</dd>
+<dt>emb_dim: int</dt><dd><p>Embedding layer dimension.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>emb<span class="classifier">nn.Embedding</span></dt><dd><p>Embedding layer.</p>
+</dd>
+<dt>emb2tag<span class="classifier">nn.Linear</span></dt><dd><p>Linear layer.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.SimpleLinear.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.SimpleLinear.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes entity logits</p>
+<dl class="simple">
+<dt>token_ids<span class="classifier">torch.Tensor</span></dt><dd><p>List of tokens indexes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>torch.Tensor</dt><dd><p>Entity logits</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="dataset.html"
+       title="previous chapter">← Dataset</a>
+  </li>
+  <li class="next">
+    <a href="trainer.html"
+       title="next chapter">Trainer →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Lucas Pavanelli.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.7.3.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

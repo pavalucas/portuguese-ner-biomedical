@@ -1,3 +1,7 @@
+"""
+This module contains all implemented models to predict Named Entity Recognition (NER).
+Author: Lucas Pavanelli
+"""
 import torch
 import torch.nn as nn
 from transformers import AutoModel  # or BertModel, for BERT without pretraining heads
@@ -35,7 +39,6 @@ class BERTSlotFilling(nn.Module):
     def __init__(self, hidden_dim, num_classes):
         super(BERTSlotFilling, self).__init__()
 
-        # self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.device = torch.device('cpu')
         self.hidden_dim = hidden_dim
         self.num_classes = num_classes

@@ -17,7 +17,64 @@
 <br />
 
 <!-- ABOUT THE PROJECT -->
-## About the project
+This project provides models for the Named Entity Recognition task and algorithms to train, test, and evaluate the
+proposed models.
+
+The data are in the Portuguese language and from the biomedical domain. 
+We provided only one file as a data example, but we will release the full dataset soon.
+<br />
+
+<!-- GETTING STARTED -->
+## Installation
+
+First, check that you have Python 3.7+:
+```
+python3 --version
+```
+
+ Then, you can install this package with the following instructions:
+
+```sh
+git clone https://github.com/pavalucas/portuguese-ner-biomedical.git
+cd portuguese-ner-biomedical
+python3 setup.py install
+```
+<br />
+
+### Tests
+We developed tests using [PyTest](https://pytest.org/). All test files are located under the `tests/` folder.
+
+To run all tests:
+```
+pytest .
+```
+
+To output the test log to a file:
+```
+pytest . > testlog.txt
+```
+---
+
+<br />
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+
+<br />
+
+<!-- CONTACT -->
+## Contact
+
+Lucas Pavanelli - lucasapava@gmail.com
+
+Project Link: [portuguese-ner-biomedical](https://github.com/pavalucas/portuguese-ner-biomedical)
+
+
+<br />
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

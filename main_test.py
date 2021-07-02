@@ -25,7 +25,9 @@ HIDDEN_DIM = 1024
 def main():
     time_str = time.strftime("%Y_%m_%d-%H:%M:%S")
 
-    # CRF
+    ################################################
+    #           CRF
+    ################################################
     crf_output_folder = OUTPUT_PATH + ('crf_%s' % time_str) + '/'
     if not os.path.exists(crf_output_folder):
         os.makedirs(crf_output_folder)
@@ -47,7 +49,9 @@ def main():
 
     evaluation.generate_output_csv('crf_output', y_true, y_pred, test_tokens)
 
-    # Linear Layer + CRF
+    ################################################
+    #           Linear Layer + CRF
+    ################################################
     linear_layer_crf_output_folder = OUTPUT_PATH + ('linear_layer_crf_%s' % time_str) + '/'
     if not os.path.exists(linear_layer_crf_output_folder):
         os.makedirs(linear_layer_crf_output_folder)
@@ -60,16 +64,16 @@ def main():
     model = LinearLayerCRF(num_classes, vocab_size, data_info.out_w2id)
     optimizer = optim.SGD(model.parameters(), lr=0.01, weight_decay=1e-4)
 
-    trainer = Trainer(model)
+    trainer = Trainer(model, BATCH, is_bert=False)
     evaluation = Evaluation(linear_layer_crf_output_folder)
 
     micro_avg_f1 = 0.0
     y_true_text = y_pred_text = test_tokens = []
     for num_experiment in range(NUM_EXPERIMENTS):
-        y_true, y_pred = trainer.test_linear_layer_crf(test_data)
+        y_true, y_pred = trainer.test(test_data)
         for epoch in range(1, NUM_EPOCHS + 1):
-            trainer.train_linear_layer_crf(train_data, optimizer, BATCH, epoch)
-            y_true, y_pred = trainer.test_linear_layer_crf(test_data)
+            trainer.train(train_data, optimizer, epoch)
+            y_true, y_pred = trainer.test(test_data)
 
         # get test tokens and convert output from number to text
         test_tokens = [info[-1] for info in test_data]
@@ -83,7 +87,9 @@ def main():
     print('Micro avg F1: %.2f' % micro_avg_f1)
     evaluation.generate_output_csv('linear_layer_output', y_true_text, y_pred_text, test_tokens)
 
-    # BERT
+    ################################################
+    #           BERT
+    ################################################
     bert_output_folder = OUTPUT_PATH + ('bert_%s' % time_str) + '/'
     if not os.path.exists(bert_output_folder):
         os.makedirs(bert_output_folder)
@@ -96,8 +102,6 @@ def main():
     num_classes = len(data_info.vocab_out)
     model = BERTSlotFilling(HIDDEN_DIM, num_classes)
     model.to(device)
-    evaluation = Evaluation(bert_output_folder)
-    trainer = Trainer(model)
 
     no_decay = ['bias', 'LayerNorm.weight']
     optimizer_grouped_parameters = [
@@ -111,13 +115,16 @@ def main():
     weights = torch.tensor(weights).to(device)
     criterion = nn.CrossEntropyLoss(weight=weights)
 
+    evaluation = Evaluation(bert_output_folder)
+    trainer = Trainer(model, BATCH, is_bert=True, criterion=criterion)
+
     micro_avg_f1 = 0.0
     y_true_text = y_pred_text = test_tokens = []
     for num_experiment in range(NUM_EXPERIMENTS):
-        y_true, y_pred = trainer.test_bert(test_data)
+        y_true, y_pred = trainer.test(test_data)
         for epoch in range(1, NUM_EPOCHS + 1):
-            trainer.train_bert(train_data, criterion, optimizer, BATCH, epoch)
-            y_true, y_pred = trainer.test_bert(test_data)
+            trainer.train(train_data, optimizer, epoch)
+            y_true, y_pred = trainer.test(test_data)
 
         # get test tokens and convert output from number to text
         test_tokens = [info[-1] for info in test_data]

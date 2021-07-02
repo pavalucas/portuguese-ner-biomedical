@@ -1,5 +1,7 @@
-__author__='lucasaguiarpavanelli'
-
+"""
+This module loads and parses input data.
+Author: Lucas Pavanelli
+"""
 import json
 import os
 import random
