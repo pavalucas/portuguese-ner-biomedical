@@ -57,11 +57,11 @@ class Data:
         self.out_id2w = out_id2w
 
     @staticmethod
-    def _find_sub_list(sl, l):
+    def _find_sub_list(sub_list, full_list):
         results = []
-        sll = len(sl)
-        for ind in (i for i, e in enumerate(l) if e == sl[0]):
-            if l[ind:ind + sll] == sl:
+        sll = len(sub_list)
+        for ind in (i for i, e in enumerate(full_list) if e == sub_list[0]):
+            if full_list[ind:ind + sll] == sub_list:
                 results.append((ind, ind + sll - 1))
         return results
 
@@ -79,7 +79,6 @@ class Data:
                 ners = row['completions'][0]['result']
                 for ner in ners:
                     label, text = ner['value']['labels'][0], ner['value']['text'].split()
-                    # TODO investigar problema quando a entidade anotada aparece várias vezes no texto
                     indexes = Data._find_sub_list(text, tokens)
                     for idx in indexes:
                         s, e = idx
